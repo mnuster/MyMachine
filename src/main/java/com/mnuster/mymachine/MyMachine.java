@@ -1,0 +1,32 @@
+package com.mnuster.mymachine;
+
+import com.mnuster.mymachine.config.ConfigHandler;
+import com.mnuster.mymachine.proxy.IProxy;
+import com.mnuster.mymachine.ref.MOD;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = MOD.ID, name = MOD.NAME, version = MOD.VERSION)
+public class MyMachine {
+    @Mod.Instance(MOD.ID)
+    public static MyMachine instance;
+
+    @SidedProxy(clientSide = MOD.CLIENT_PROXY, serverSide = MOD.SERVER_PROXY)
+    public static IProxy proxy;
+
+    @Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        ConfigHandler.init(event.getSuggestedConfigurationFile());
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+    }
+}

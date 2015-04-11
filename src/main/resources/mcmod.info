@@ -1,0 +1,17 @@
+[
+  {
+    "modid": "mymachine",
+    "name": "MyMachine",
+    "description": "Your custom modular machine",
+    "version": "1.0",
+    "mcversion": "1.7.10",
+    "credits": "Created by mnuster",
+    "logoFile": "",
+    "url": "",
+    "updateUrl": "",
+    "screenshots": [],
+    "authorList": ["mnuster"],
+    "parent": "",
+    "dependencies": []
+  }
+]
