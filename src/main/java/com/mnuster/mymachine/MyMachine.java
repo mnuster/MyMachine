@@ -1,9 +1,9 @@
 package com.mnuster.mymachine;
 
-import com.mnuster.mymachine.REF.MOD;
 import com.mnuster.mymachine.config.ConfigHandler;
 import com.mnuster.mymachine.init.ModItemsMM;
 import com.mnuster.mymachine.proxy.IProxy;
+import com.mnuster.mymachine.ref.MOD;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

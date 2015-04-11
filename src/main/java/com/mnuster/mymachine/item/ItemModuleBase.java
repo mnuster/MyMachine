@@ -1,6 +1,6 @@
 package com.mnuster.mymachine.item;
 
-import com.mnuster.mymachine.REF.ITEMS;
+import com.mnuster.mymachine.ref.ITEMS;
 
 public class ItemModuleBase extends ItemMM {
 

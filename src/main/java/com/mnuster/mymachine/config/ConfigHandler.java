@@ -1,6 +1,6 @@
 package com.mnuster.mymachine.config;
 
-import com.mnuster.mymachine.REF.MOD;
+import com.mnuster.mymachine.ref.MOD;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;

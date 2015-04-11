@@ -1,6 +1,6 @@
 package com.mnuster.mymachine.item;
 
-import com.mnuster.mymachine.REF.MOD;
+import com.mnuster.mymachine.ref.MOD;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
