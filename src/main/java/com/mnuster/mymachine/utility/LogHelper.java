@@ -1,6 +1,6 @@
 package com.mnuster.mymachine.utility;
 
-import com.mnuster.mymachine.ref.MOD;
+import com.mnuster.mymachine.REF.MOD;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 

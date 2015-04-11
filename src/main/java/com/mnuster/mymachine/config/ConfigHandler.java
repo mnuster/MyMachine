@@ -1,24 +1,36 @@
 package com.mnuster.mymachine.config;
 
+import com.mnuster.mymachine.REF.MOD;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 
 import java.io.File;
 
 public class ConfigHandler {
+
+    public static Configuration config;
+
     public static void init(File configFile) {
-        Configuration config = new Configuration(configFile);
+        if (config == null) {
+            config = new Configuration(configFile);
+            loadConfig();
+        }
+    }
 
-        try {
-            // Load configs
-            config.load();
+    private static void loadConfig() {
+        // TODO Load Configs
+        config.get("TESTING", "VALUE", true);
 
-            // Read in configs
-            //config.get()
-        } catch (Exception e) {
-            // Log config error
-        } finally {
-            // Save configs
+        if (config.hasChanged()) {
             config.save();
+        }
+    }
+
+    @SubscribeEvent
+    public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event) {
+        if (event.modID.equalsIgnoreCase(MOD.ID)) {
+            loadConfig();
         }
     }
 }
