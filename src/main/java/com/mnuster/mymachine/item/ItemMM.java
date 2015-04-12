@@ -8,9 +8,9 @@ public class ItemMM extends Item {
 
     public ItemMM(String unlocalizedName) {
         super();
-        this.setUnlocalizedName(unlocalizedName);
-        this.setTextureName(MOD.ID + ":" + unlocalizedName);
-        this.setCreativeTab(MOD.TAB);
+        setUnlocalizedName(unlocalizedName);
+        setTextureName(MOD.ID + ":" + unlocalizedName);
+        setCreativeTab(MOD.TAB);
     }
 
     @Override

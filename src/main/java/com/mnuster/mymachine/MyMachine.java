@@ -1,6 +1,7 @@
 package com.mnuster.mymachine;
 
 import com.mnuster.mymachine.config.ConfigHandler;
+import com.mnuster.mymachine.init.ModBlocksMM;
 import com.mnuster.mymachine.init.ModItemsMM;
 import com.mnuster.mymachine.proxy.IProxy;
 import com.mnuster.mymachine.ref.MOD;
@@ -27,6 +28,9 @@ public class MyMachine {
 
         // Register items
         ModItemsMM.register();
+
+        // Register blocks
+        ModBlocksMM.register();
     }
 
     @Mod.EventHandler

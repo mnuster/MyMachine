@@ -1,4 +1,9 @@
 
+# Creative Tab
+itemGroup.mymachine=My Machine
 
 # Items
 mymachine:item.moduleBase.name=Module Base
+
+# Tiles
+mymachine:tile.machineAssembler.name=Machine Assembler
